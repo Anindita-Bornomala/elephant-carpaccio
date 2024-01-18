@@ -1,10 +1,21 @@
+
+import sys
+
 def main():
-    tax = {"ON":0.13}
+    tax = {"ON":0.13, "QC":0.14975, "MB":}
 
     price = float(sys.argv[1])
     
     quantity = int(sys.argv[2])
 
-    pre_tax = price*quantity
 
-    print(pre_tax)
+    pre_tax = price * quantity
+
+    after_tax = 
+
+    print("The total cost is: $", pre_tax)
+
+
+if __name__:
+    main()
+    
