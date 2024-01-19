@@ -2,7 +2,7 @@
 import sys
 
 def main():
-    tax = {"ON":0.13, "QC":0.14975, "MB":}
+    tax = {"ON":0.13, "QC":0.14975, "MB":0.12}
 
     price = float(sys.argv[1])
     
@@ -10,8 +10,6 @@ def main():
 
 
     pre_tax = price * quantity
-
-    after_tax = 
 
     print("The total cost is: $", pre_tax)
 
