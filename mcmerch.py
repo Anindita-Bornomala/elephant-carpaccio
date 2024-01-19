@@ -9,13 +9,13 @@ def main():
 
     pre_tax = price * quantity
 
-    tax = sys.argv[3]
+    tax_prov = sys.argv[3]
 
-    if tax == "ON":
+    if tax_prov == "ON":
         after_tax = pre_tax + (pre_tax*tax.get("ON"))
-    elif tax == "QC":
+    elif tax_prov == "QC":
         after_tax = pre_tax + (pre_tax*tax.get("QC"))
-    elif tax == "MB":
+    elif tax_prov == "MB":
         after_tax = pre_tax + (pre_tax*tax.get("MB"))
 
     print("The total cost is: $", pre_tax)
