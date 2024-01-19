@@ -12,7 +12,11 @@ def main():
     tax = sys.argv[3]
 
     if tax == "ON":
-        after_tax = pre_tax + (pre_tax*tax)
+        after_tax = pre_tax + (pre_tax*tax.get("ON"))
+    elif tax == "QC":
+        after_tax = pre_tax + (pre_tax*tax.get("QC"))
+    elif tax == "MB":
+        after_tax = pre_tax + (pre_tax*tax.get("MB"))
 
     print("The total cost is: $", pre_tax)
     print("The total cost after tax is: $", after_tax)
